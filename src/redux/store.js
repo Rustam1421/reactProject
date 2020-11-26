@@ -25,8 +25,8 @@ let store = {
                 {id: 1, message: 'Some message'},
                 {id: 2, message: 'whasup'},
                 {id: 3, message: 'whasup 2'},
-                {id: 4, message: 'Rosie <3'},
-                {id: 5, message: 'Rosie <3'},
+                {id: 4, message: 'msg'},
+                {id: 5, message: 'msg 2'},
             ],
              newMessageText : '',
              dialogs: [
