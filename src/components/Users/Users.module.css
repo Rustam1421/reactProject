@@ -2,7 +2,14 @@
     display: flex;
 }
 
-img {
-    height: 50px;
-    width: 50px;
+.mainContainer div {
+    margin: 10px;
+    font-weight: 900;
 }
+
+.mainContainer img {
+    height: 180px;
+    width: 200px;
+    border-radius: 100px;
+}
+
