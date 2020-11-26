@@ -1,0 +1,46 @@
+.nav {
+    background-color: #9191f3;
+    width: 240px;
+    /*margin-bottom: 454px;*/
+    min-height: 100vh;
+}
+
+.nav ul li {
+    list-style: none;
+    padding-top: 12px;
+    margin-left: 10px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav ul li a:hover {
+    color: #ff7a59;
+    border: #ff7a59 solid 1px;
+    background:#fff;
+}
+
+.nav a.activeLink {
+    color: gold;
+}
+
+.nav img {
+    height: 50px;
+    border-radius: 100px;
+}
+
+.friendsContainer {
+    display: flex;
+    margin-top: 10px;
+}
+
+.friendsContainer div {
+    margin: 10px;
+}
+
+
+.friends {
+    font-size: 55px;
+}

@@ -1,38 +1,38 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+
+  /*background:  url("http://www.banzaj.pl/pictures/celebrity/gwiazdy_zagraniczne/rosie_huntington_whiteley/Rosie_Huntington_Whiteley_w_wiosennej_bieliznie_Marks_Spencer/rosie_huntington_whiteley_w_wiosennej_bieliznie_marks_spencer_04.jpg")no-repeat center center fixed;*/
+  /*background:  url("https://celebsdump.com/posts/2020/01/11579/images/rosie-huntington-whiteley-the-sunday-times-style-january-19-2020-1.jpg")no-repeat center center fixed;*/
+  /*background:  url("https://boombo.pro/uploads/posts/2019-06/1561508286_lingerie_introduction_v2.jpg")no-repeat center center fixed;*/
+  /*background:  url("https://krot.info/uploads/posts/2019-09/1569668654_seksualnaja-rouzi-hantington-uajtli-39.jpg")no-repeat center center fixed;*/
+  background:  url("https://static.standard.co.uk/s3fs-public/thumbnails/image/2014/07/31/13/rosiemain.jpg")no-repeat center center fixed;
+  /*background:  url("https://boombo.pro/uploads/posts/2019-09/1568264541_168832231688333.jpg")no-repeat center center fixed;*/
+  /*background-size: 40%;*/
+  /*-webkit-background-size: cover;*/
+  /*-moz-background-size: cover;*/
+  /*-o-background-size: cover;*/
+  /*background-size: cover;*/
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-wrapper {
+  /*background:  url("https://avatars.mds.yandex.net/get-pdb/1684047/07d89a5e-7819-4a86-9324-5bcc365e25e7/s1200?webp=false") no-repeat 80% 0%;*/
+  /*background-size: 700px;*/
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /*background-repeat: no-repeat;*/
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+

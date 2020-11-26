@@ -1,0 +1,38 @@
+.dialogs {
+    display: flex;
+    /*background-color: red;*/
+    width: 80%;
+    justify-content: space-around;
+    padding-top: 10%;
+}
+
+.dialogsItems .dialog a {
+    color: #ff0000;
+    font-weight: 900;
+    font-size: 25px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.dialogsItems .dialog span {
+    color: red;
+}
+
+.dialogsItems .dialog.active {
+    color: green;
+}
+
+.messages .message {
+    font-weight: 900;
+    font-size: 22px;
+    padding: 10px;
+}
+
+.messages {
+    padding-left: 25%;
+}
+
+.dialogs img {
+    height: 100px;
+    border-radius: 100px;
+}
