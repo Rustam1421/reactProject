@@ -1,14 +1,16 @@
 const FOLLOW = 'FOLLOW';
 const UNFOLLOW = 'UNFOLLOW';
 const SET_USERS = 'SET-USERS';
+const SET_CURRENT_PAGE = 'SET_CURRENT_PAGE';
+const SET_USERS_TOTAL_COUNT = 'SET_USERS_TOTAL_COUNT';
+const SET_TOGGLE_IS_FETCHING = 'SET_TOGGLE_IS_FETCHING';
 
 let initialState = {
-    users: [
-        // {id: 1, avatarUrl: 'https://cdn.cliqueinc.com/posts/289681/rosie-huntington-whiteley-favorite-beauty-products-289681-1603214193519-fb.700x0c.jpg', followed: true, fullName: 'someName', status: 'Yo status', location: {city: 'Minsk', country: 'Belarus'}},
-        // {id: 2, avatarUrl: 'https://i0.wp.com/chic101blog.com/wp-content/uploads/2019/06/aX39F2.jpg?w=1080&ssl=1', followed: false, fullName: 'someName2', status: 'Yo status2', location: {city: 'Minsk', country: 'Belarus'}},
-        // {id: 3, avatarUrl: 'https://pbs.twimg.com/profile_images/1280584931157200897/r_JFhYkq_400x400.png', followed: true, fullName: 'someName3', status: 'Yo status3', location: {city: 'Moscow', country: 'Russia'}},
-        // {id: 4, avatarUrl: 'https://i.dailymail.co.uk/1s/2019/08/08/06/17030918-7336005-image-a-19_1565243709022.jpg', followed: false, fullName: 'someName4', status: 'Yo status4', location: {city: 'Astana', country: 'KZ'}},
-    ],
+    users: [],
+    pageSize: 5,
+    totalUsersCount: 0,
+    currentPage: 2,
+    isFetching: false
 }
 
 const usersReducer = (state = initialState, action) => {
@@ -41,7 +43,20 @@ const usersReducer = (state = initialState, action) => {
 
         case SET_USERS:
             return {
-                ...state, users: [...state.users, ...action.users]
+                ...state, users: action.users
+            }
+
+        case SET_CURRENT_PAGE:
+            return {
+                ...state, currentPage: action.currentPage
+            }
+        case SET_USERS_TOTAL_COUNT:
+            return {
+                ...state, totalUsersCount: action.totalCount
+            }
+        case SET_TOGGLE_IS_FETCHING:
+            return {
+                ...state, isFetching: action.isFetching
             }
 
         default:
@@ -65,6 +80,23 @@ export const unfollowAc = (userId) => {
 export const setUsersAc = (users) => {
     return {
         type: SET_USERS, users
+    }
+}
+
+export const setCurrentPageAc = (currentPage) => {
+    return {
+        type: SET_CURRENT_PAGE, currentPage
+    }
+}
+
+export const setUsersTotalCountAc = (totalCount) => {
+    return {
+        type: SET_USERS_TOTAL_COUNT, totalCount
+    }
+}
+export const setToggleIsFetchingAc = (isFetching) => {
+    return {
+        type: SET_TOGGLE_IS_FETCHING, isFetching
     }
 }
 

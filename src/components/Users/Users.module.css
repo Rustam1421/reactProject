@@ -1,5 +1,7 @@
 .mainContainer {
     display: flex;
+    flex-wrap: wrap;
+    width: 900px;
 }
 
 .mainContainer div {
@@ -11,5 +13,11 @@
     height: 180px;
     width: 200px;
     border-radius: 100px;
+}
+
+.selectedPage {
+    font-weight: bold;
+    cursor: pointer;
+    color: red;
 }
 
