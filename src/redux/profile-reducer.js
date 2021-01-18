@@ -18,7 +18,7 @@ let initialState = {
         }
     ],
         newPostText: 'it-kamasutra', src: '',
-    userProfile: null
+    profile: null
 }
 
 const profileReducer = (state = initialState, action) => {
@@ -44,7 +44,7 @@ const profileReducer = (state = initialState, action) => {
         case SET_USERS_PROFILE: {
             return {
                 ...state,
-                userProfile: action.profile
+                profile: action.profile
             }
         }
         default:

@@ -10,3 +10,10 @@
     border-radius: 10px;
     margin-left: 10px;
 }
+
+.loginBtn a {
+    color: red;
+    float: right;
+    font-weight: 900;
+    font-size: 30px;
+}
